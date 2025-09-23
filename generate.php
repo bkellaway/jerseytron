@@ -1,4 +1,4 @@
- <?php
+<?php
 // Set headers for JSON response
 header('Content-Type: application/json');
 
@@ -41,7 +41,8 @@ curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
 curl_setopt($ch, CURLOPT_HTTPHEADER, [
     'Content-Type: application/json',
-    'x-goog-api-key: ' . GEMINI_API_KEY
+    // --- THIS LINE IS THE FIX ---
+    'x-goog-api-key: ' . GEMINI_API_KEY // Use the constant, not the variable
 ]);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true); // Recommended for production
 
