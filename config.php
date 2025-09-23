@@ -6,7 +6,8 @@ define('GEMINI_API_KEY', 'AIzaSyC5YfRnmYtUfGWGZhEJ1K9eFOtIWY_kM0k');
 
 // The model name for "Nano Banana" / Gemini 2.5 Flash Image
 // Note: This model name might change. Check the Google AI docs for the latest identifier.
-define('GEMINI_MODEL', 'gemini-2.5-flash-image');
+define('GEMINI_MODEL', 'gemini-2.5-flash-image-preview'); // Fixed: added -preview
+
 
 // ** Email Configuration **
 // The email address to send the final designs to
