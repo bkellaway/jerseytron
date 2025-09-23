@@ -87,6 +87,14 @@ try {
         throw new Exception('Failed to decode base64 image string.');
     }
 
+
+
+    // Ensure the output directory exists; create it automatically if needed.
+    if (!is_dir('generated_images') && !mkdir('generated_images', 0775, true)) {
+        throw new Exception('Failed to create directory for generated images.');
+    }
+
+
     // Save the image to a file
     $fileName = 'jersey_' . uniqid() . '.png';
     $filePath = 'generated_images/' . $fileName;
