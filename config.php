@@ -2,7 +2,7 @@
 
 // ** Google Gemini API Configuration **
 // Get your key from Google AI Studio: https://aistudio.google.com/app/apikey
-define('GEMINI_API_KEY', 'AIzaSyC5YfRnmYtUfGWGZhEJ1K9eFOtIWY_kM0k');
+define('GEMINI_API_KEY', '');
 
 // The model name for "Nano Banana" / Gemini 2.5 Flash Image
 // Note: This model name might change. Check the Google AI docs for the latest identifier.
