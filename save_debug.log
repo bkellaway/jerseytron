@@ -1,0 +1,10 @@
+2025-09-23 17:08:12 - SAVE DEBUG: === Starting save.php debug ===
+2025-09-23 17:08:12 - SAVE DEBUG: Config loaded successfully
+2025-09-23 17:08:12 - SAVE DEBUG: SMTP_ENABLED: true
+2025-09-23 17:08:12 - SAVE DEBUG: SMTP_USERNAME: your-email@gmail.com
+2025-09-23 17:08:12 - SAVE DEBUG: RECIPIENT_EMAIL: bill@billkellaway.com
+2025-09-23 17:08:12 - SAVE DEBUG: Image URL: generated_images/jersey_68d31a4943641.png
+2025-09-23 17:08:12 - SAVE DEBUG: Prompt: A black jersey with fiery orange and white stripes on the sleeves and a roaring panther logo on the chest
+2025-09-23 17:08:12 - SAVE DEBUG: Full image path: /home1/kellaway/jerseytron.backofficedesigns.com/generated_images/jersey_68d31a4943641.png
+2025-09-23 17:08:12 - SAVE DEBUG: Image file exists, size: 1702632 bytes
+2025-09-23 17:08:12 - SAVE DEBUG: WARNING: SMTP credentials not configured

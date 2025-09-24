@@ -4,6 +4,20 @@ header('Content-Type: application/json');
 error_reporting(E_ALL);
 ini_set('display_errors', 0); // Don't output errors to browser
 
+// Check if vendor/autoload.php exists first
+if (!file_exists('vendor/autoload.php')) {
+    http_response_code(500);
+    echo json_encode(['error' => 'PHPMailer not installed. Run "composer install" first.']);
+    exit;
+}
+
+require 'vendor/autoload.php';
+require 'config.php';
+
+// Use statements must be at the top
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 // Log function
 function debug_log($message) {
     error_log(date('Y-m-d H:i:s') . ' - SAVE DEBUG: ' . $message . "\n", 3, 'save_debug.log');
@@ -12,24 +26,10 @@ function debug_log($message) {
 debug_log("=== Starting save.php debug ===");
 
 try {
-    require 'config.php';
-
     debug_log("Config loaded successfully");
     debug_log("SMTP_ENABLED: " . (SMTP_ENABLED ? 'true' : 'false'));
     debug_log("SMTP_USERNAME: " . SMTP_USERNAME);
     debug_log("RECIPIENT_EMAIL: " . RECIPIENT_EMAIL);
-
-    // Check if vendor/autoload.php exists
-    if (!file_exists('vendor/autoload.php')) {
-        debug_log("ERROR: vendor/autoload.php not found - PHPMailer not installed");
-        throw new Exception("PHPMailer not installed. Run 'composer install' first.");
-    }
-
-    require 'vendor/autoload.php';
-    debug_log("Vendor autoload loaded");
-
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
 
     // Validate input
     if (!isset($_POST['imageUrl']) || empty($_POST['imageUrl'])) {
