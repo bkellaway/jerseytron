@@ -1,0 +1,12 @@
+{
+    "name": "example/hockey-jersey-designer",
+    "description": "A UI for designing hockey jerseys using the Gemini API.",
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,66 @@
+[22-Sep-2025 22:33:49 America/Chicago] PHP Parse error:  syntax error, unexpected double-quoted string "https://generativelanguage.goo..." in /home1/kellaway/jerseytron.backofficedesigns.com/test.php on line 3
+[23-Sep-2025 16:21:36 America/Chicago] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /home1/kellaway/jerseytron.backofficedesigns.com/config.php:1) in /home1/kellaway/jerseytron.backofficedesigns.com/generate.php on line 70
+[23-Sep-2025 16:23:16 America/Chicago] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /home1/kellaway/jerseytron.backofficedesigns.com/config.php:1) in /home1/kellaway/jerseytron.backofficedesigns.com/generate.php on line 70
+[23-Sep-2025 16:37:01 America/Chicago] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /home1/kellaway/jerseytron.backofficedesigns.com/config.php:1) in /home1/kellaway/jerseytron.backofficedesigns.com/generate.php on line 70
+[23-Sep-2025 16:40:31 America/Chicago] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /home1/kellaway/jerseytron.backofficedesigns.com/config.php:1) in /home1/kellaway/jerseytron.backofficedesigns.com/generate.php on line 70
+[23-Sep-2025 16:45:19 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kellaway/jerseytron.backofficedesigns.com/save.php:1) in /home1/kellaway/jerseytron.backofficedesigns.com/save.php on line 2
+[23-Sep-2025 16:45:19 America/Chicago] PHP Fatal error:  Uncaught Error: Class "PHPMailer\PHPMailer\PHPMailer" not found in /home1/kellaway/jerseytron.backofficedesigns.com/save.php:26
+Stack trace:
+#0 {main}
+  thrown in /home1/kellaway/jerseytron.backofficedesigns.com/save.php on line 26
+[23-Sep-2025 16:45:25 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/kellaway/jerseytron.backofficedesigns.com/save.php:1) in /home1/kellaway/jerseytron.backofficedesigns.com/save.php on line 2
+[23-Sep-2025 16:45:25 America/Chicago] PHP Fatal error:  Uncaught Error: Class "PHPMailer\PHPMailer\PHPMailer" not found in /home1/kellaway/jerseytron.backofficedesigns.com/save.php:26
+Stack trace:
+#0 {main}
+  thrown in /home1/kellaway/jerseytron.backofficedesigns.com/save.php on line 26
+[23-Sep-2025 16:50:43 America/Chicago] PHP Parse error:  syntax error, unexpected token "use" in /home1/kellaway/jerseytron.backofficedesigns.com/save.php on line 31
+[23-Sep-2025 16:51:25 America/Chicago] PHP Parse error:  syntax error, unexpected token "use" in /home1/kellaway/jerseytron.backofficedesigns.com/save.php on line 31
+[23-Sep-2025 17:07:05 America/Chicago] PHP Parse error:  syntax error, unexpected token "use" in /home1/kellaway/jerseytron.backofficedesigns.com/save.php on line 31
+[23-Sep-2025 21:36:50 America/Chicago] PHP Warning:  Undefined variable $argv in /home1/kellaway/jerseytron.backofficedesigns.com/composer-installer.php on line 14
+[24-Sep-2025 13:13:11 America/Chicago] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /home1/kellaway/jerseytron.backofficedesigns.com/config.php:1) in /home1/kellaway/jerseytron.backofficedesigns.com/generate.php on line 136
+[24-Sep-2025 13:23:45 America/Chicago] PHP Notice:  file_put_contents(): Write of 283305 bytes failed with errno=122 Disk quota exceeded in /home1/kellaway/jerseytron.backofficedesigns.com/generate.php on line 162
+[24-Sep-2025 13:23:45 America/Chicago] PHP Warning:  file_put_contents(): Only 1232896 of 1516201 bytes written, possibly out of free disk space in /home1/kellaway/jerseytron.backofficedesigns.com/generate.php on line 162
+[24-Sep-2025 13:23:45 America/Chicago] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /home1/kellaway/jerseytron.backofficedesigns.com/config.php:1) in /home1/kellaway/jerseytron.backofficedesigns.com/generate.php on line [24-Sep-2025 16:53:41 America/Chicago] PHP Warning:  Undefined variable $argv in /home1/kellaway/jerseytron.backofficedesigns.com/composer-installer.php on line 14
+[24-Sep-2025 17:01:24 America/Chicago] PHP Warning:  Undefined variable $argv in /home1/kellaway/jerseytron.backofficedesigns.com/composer-installer.php on line 14
+[24-Sep-2025 18:54:02 America/Chicago] PHP Parse error:  Unclosed '(' on line 27 in /home1/kellaway/jerseytron.backofficedesigns.com/users/init.php on line 28
+[24-Sep-2025 18:55:34 America/Chicago] PHP Parse error:  Unclosed '(' on line 27 in /home1/kellaway/jerseytron.backofficedesigns.com/users/init.php on line 28
+[24-Sep-2025 19:21:46 America/Chicago] PHP Warning:  require_once(../users/init.php): Failed to open stream: No such file or directory in /home1/kellaway/jerseytron.backofficedesigns.com/spice.php on line 11
+[24-Sep-2025 19:21:46 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '../users/init.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home1/kellaway/jerseytron.backofficedesigns.com/spice.php:11
+Stack trace:
+#0 {main}
+  thrown in /home1/kellaway/jerseytron.backofficedesigns.com/spice.php on line 11
+[24-Sep-2025 18:27:54 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home1/kellaway/jerseytron.backofficedesigns.com/spice.php:271
+Stack trace:
+#0 {main}
+  thrown in /home1/kellaway/jerseytron.backofficedesigns.com/spice.php on line 271
+[25-Sep-2025 15:17:49 America/Chicago] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /home1/kellaway/jerseytron.backofficedesigns.com/config.php:1) in /home1/kellaway/jerseytron.backofficedesigns.com/generate.php on line 119
+[25-Sep-2025 22:18:44 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home1/kellaway/jerseytron.backofficedesigns.com/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 1
+[25-Sep-2025 22:22:51 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home1/kellaway/jerseytron.backofficedesigns.com/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 1
+[25-Sep-2025 22:22:53 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home1/kellaway/jerseytron.backofficedesigns.com/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 1
+[26-Sep-2025 16:21:07 America/Chicago] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /home1/kellaway/jerseytron.backofficedesigns.com/config.php:1) in /home1/kellaway/jerseytron.backofficedesigns.com/generate.php on line 136
+[26-Sep-2025 18:05:00 America/Chicago] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /home1/kellaway/jerseytron.backofficedesigns.com/config.php:1) in /home1/kellaway/jerseytron.backofficedesigns.com/generate.php on line 136
+[28-Sep-2025 21:34:40 America/Chicago] PHP Warning:  require_once(users/init.php): Failed to open stream: No such file or directory in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 8
+[28-Sep-2025 21:34:40 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required 'users/init.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home1/kellaway/jerseytron.backofficedesigns.com/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 8
+[28-Sep-2025 21:35:06 America/Chicago] PHP Warning:  Undefined variable $isLoggedIn in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 166
+[28-Sep-2025 21:35:06 America/Chicago] PHP Warning:  Undefined variable $isLoggedIn in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 180
+[28-Sep-2025 21:35:06 America/Chicago] PHP Warning:  Undefined variable $isLoggedIn in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 182
+[28-Sep-2025 21:35:06 America/Chicago] PHP Warning:  Undefined variable $isLoggedIn in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 198
+[28-Sep-2025 21:35:06 America/Chicago] PHP Warning:  Undefined variable $isLoggedIn in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 210
+[28-Sep-2025 21:36:17 America/Chicago] PHP Warning:  Undefined variable $isLoggedIn in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 183
+[28-Sep-2025 21:36:17 America/Chicago] PHP Warning:  Undefined variable $isLoggedIn in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 195
+[28-Sep-2025 21:36:41 America/Chicago] PHP Warning:  Undefined variable $isLoggedIn in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 195
+[28-Sep-2025 21:36:47 America/Chicago] PHP Warning:  Undefined variable $isLoggedIn in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 195
+[28-Sep-2025 21:40:13 America/Chicago] PHP Warning:  Undefined variable $isLoggedIn in /home1/kellaway/jerseytron.backofficedesigns.com/index.php on line 195
+[28-Sep-2025 21:51:29 America/Chicago] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /home1/kellaway/jerseytron.backofficedesigns.com/config.php:1) in /home1/kellaway/jerseytron.backofficedesigns.com/save.php on line 121
