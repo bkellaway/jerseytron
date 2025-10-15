@@ -1,0 +1,90 @@
+2025-09-29 01:23:16 - HANDLE_SEND: === Starting handle_send.php ===
+2025-09-29 01:23:16 - HANDLE_SEND: Customer Name: Bill Kellaway
+2025-09-29 01:23:16 - HANDLE_SEND: Customer Email: billkellaway@gmail.com
+2025-09-29 01:23:16 - HANDLE_SEND: Customer Phone: (760) 505-3056
+2025-09-29 01:23:16 - HANDLE_SEND: Image URL: generated_images/jersey_68da25b6e76c9.png
+2025-09-29 01:23:16 - HANDLE_SEND: Image file exists, size: 1464316 bytes
+2025-09-29 01:23:16 - HANDLE_SEND: Fatal Error: Class "PHPMailer\PHPMailer\PHPMailer" not found
+2025-09-29 01:23:16 - HANDLE_SEND: Error trace: #0 {main}
+2025-09-29 01:23:16 - HANDLE_SEND: === End handle_send.php ===
+2025-09-29 02:00:22 - HANDLE_SEND: === Starting handle_send.php ===
+2025-09-29 02:00:22 - HANDLE_SEND: Customer Name: Bill Kellaway
+2025-09-29 02:00:22 - HANDLE_SEND: Customer Email: billkellaway@gmail.com
+2025-09-29 02:00:22 - HANDLE_SEND: Customer Phone: (760) 505-3056
+2025-09-29 02:00:22 - HANDLE_SEND: Image URL: generated_images/jersey_68da2e6992977.png
+2025-09-29 02:00:22 - HANDLE_SEND: Image file exists, size: 1559826 bytes
+2025-09-29 02:00:22 - HANDLE_SEND: PHPMailer instance created
+2025-09-29 02:00:22 - HANDLE_SEND: Configuring SMTP settings
+2025-09-29 02:00:22 - HANDLE_SEND: SMTP configured: smtp.gmail.com:587
+2025-09-29 02:00:22 - HANDLE_SEND: Email recipients configured
+2025-09-29 02:00:22 - HANDLE_SEND: From: billkellaway@gmail.com
+2025-09-29 02:00:22 - HANDLE_SEND: To: bill@billkellaway.com
+2025-09-29 02:00:22 - HANDLE_SEND: Reply-To: billkellaway@gmail.com
+2025-09-29 02:00:22 - HANDLE_SEND: Adding attachment: /home1/kellaway/jerseytron.backofficedesigns.com/generated_images/jersey_68da2e6992977.png
+2025-09-29 02:00:22 - HANDLE_SEND: Email content prepared
+2025-09-29 02:00:22 - HANDLE_SEND: Subject: New Jersey Quote Request from Bill Kellaway
+2025-09-29 02:00:22 - HANDLE_SEND: Attempting to send email...
+2025-09-29 02:00:23 - HANDLE_SEND: Email sent successfully!
+2025-09-29 02:00:23 - HANDLE_SEND: === End handle_send.php ===
+2025-09-29 12:00:37 - HANDLE_SEND: === Starting handle_send.php ===
+2025-09-29 12:00:37 - HANDLE_SEND: Customer Name: Bill Kellaway
+2025-09-29 12:00:37 - HANDLE_SEND: Customer Email: bkellaway@yahoo.com
+2025-09-29 12:00:37 - HANDLE_SEND: Customer Phone: (760) 505-3056
+2025-09-29 12:00:37 - HANDLE_SEND: Image URL: generated_images/jersey_68dab20380528.png
+2025-09-29 12:00:37 - HANDLE_SEND: Image file exists, size: 1502410 bytes
+2025-09-29 12:00:37 - HANDLE_SEND: PHPMailer instance created
+2025-09-29 12:00:37 - HANDLE_SEND: Configuring SMTP settings
+2025-09-29 12:00:37 - HANDLE_SEND: SMTP configured: smtp.gmail.com:587
+2025-09-29 12:00:37 - HANDLE_SEND: BCC added: bill@billkellaway.com
+2025-09-29 12:00:37 - HANDLE_SEND: Email recipients configured
+2025-09-29 12:00:37 - HANDLE_SEND: From: billkellaway@gmail.com
+2025-09-29 12:00:37 - HANDLE_SEND: To: joe@hockeywest.com
+2025-09-29 12:00:37 - HANDLE_SEND: Reply-To: bkellaway@yahoo.com
+2025-09-29 12:00:37 - HANDLE_SEND: Adding attachment: /home1/kellaway/hockeytron.backofficedesigns.com/generated_images/jersey_68dab20380528.png
+2025-09-29 12:00:37 - HANDLE_SEND: Email content prepared
+2025-09-29 12:00:37 - HANDLE_SEND: Subject: New Jersey Quote Request from Bill Kellaway
+2025-09-29 12:00:37 - HANDLE_SEND: Attempting to send email...
+2025-09-29 12:00:38 - HANDLE_SEND: Email sent successfully!
+2025-09-29 12:00:38 - HANDLE_SEND: === End handle_send.php ===
+2025-09-29 12:43:13 - HANDLE_SEND: === Starting handle_send.php ===
+2025-09-29 12:43:13 - HANDLE_SEND: Customer Name: Bill Kellaway
+2025-09-29 12:43:13 - HANDLE_SEND: Customer Email: bkellaway@yahoo.com
+2025-09-29 12:43:13 - HANDLE_SEND: Customer Phone: (760) 505-3056
+2025-09-29 12:43:13 - HANDLE_SEND: Image URL: generated_images/jersey_68dac519b43f3.png
+2025-09-29 12:43:13 - HANDLE_SEND: Image file exists, size: 1587954 bytes
+2025-09-29 12:43:13 - HANDLE_SEND: PHPMailer instance created
+2025-09-29 12:43:13 - HANDLE_SEND: Configuring SMTP settings
+2025-09-29 12:43:13 - HANDLE_SEND: SMTP configured: smtp.gmail.com:587
+2025-09-29 12:43:13 - HANDLE_SEND: BCC added: bill@billkellaway.com
+2025-09-29 12:43:13 - HANDLE_SEND: BCC added: chrism@hockeytron.com
+2025-09-29 12:43:13 - HANDLE_SEND: Email recipients configured
+2025-09-29 12:43:13 - HANDLE_SEND: From: billkellaway@gmail.com
+2025-09-29 12:43:13 - HANDLE_SEND: To: joe@hockeywest.com
+2025-09-29 12:43:13 - HANDLE_SEND: Reply-To: bkellaway@yahoo.com
+2025-09-29 12:43:13 - HANDLE_SEND: Adding attachment: /home1/kellaway/hockeytron.backofficedesigns.com/generated_images/jersey_68dac519b43f3.png
+2025-09-29 12:43:13 - HANDLE_SEND: Email content prepared
+2025-09-29 12:43:13 - HANDLE_SEND: Subject: New Jersey Quote Request from Bill Kellaway
+2025-09-29 12:43:13 - HANDLE_SEND: Attempting to send email...
+2025-09-29 12:43:14 - HANDLE_SEND: Email sent successfully!
+2025-09-29 12:43:14 - HANDLE_SEND: === End handle_send.php ===
+2025-10-02 20:13:50 - HANDLE_SEND: === Starting handle_send.php ===
+2025-10-02 20:13:50 - HANDLE_SEND: Customer Name: Bill Kellaway
+2025-10-02 20:13:50 - HANDLE_SEND: Customer Email: bkellaway@yahoo.com
+2025-10-02 20:13:50 - HANDLE_SEND: Customer Phone: (760) 505-3056
+2025-10-02 20:13:50 - HANDLE_SEND: Image URL: generated_images/jersey_68df22c2cb80b.png
+2025-10-02 20:13:50 - HANDLE_SEND: Image file exists, size: 1534363 bytes
+2025-10-02 20:13:50 - HANDLE_SEND: PHPMailer instance created
+2025-10-02 20:13:50 - HANDLE_SEND: Configuring SMTP settings
+2025-10-02 20:13:50 - HANDLE_SEND: SMTP configured: smtp.gmail.com:587
+2025-10-02 20:13:50 - HANDLE_SEND: BCC added: bill@billkellaway.com
+2025-10-02 20:13:50 - HANDLE_SEND: BCC added: chrism@hockeytron.com
+2025-10-02 20:13:50 - HANDLE_SEND: Email recipients configured
+2025-10-02 20:13:50 - HANDLE_SEND: From: billkellaway@gmail.com
+2025-10-02 20:13:50 - HANDLE_SEND: To: joe@hockeywest.com
+2025-10-02 20:13:50 - HANDLE_SEND: Reply-To: bkellaway@yahoo.com
+2025-10-02 20:13:50 - HANDLE_SEND: Adding attachment: /home1/kellaway/jerseydesigner.hockeytron.com/generated_images/jersey_68df22c2cb80b.png
+2025-10-02 20:13:50 - HANDLE_SEND: Email content prepared
+2025-10-02 20:13:50 - HANDLE_SEND: Subject: New Jersey Quote Request from Bill Kellaway
+2025-10-02 20:13:50 - HANDLE_SEND: Attempting to send email...
+2025-10-02 20:13:51 - HANDLE_SEND: Email sent successfully!
+2025-10-02 20:13:51 - HANDLE_SEND: === End handle_send.php ===

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Hockey Jersey Designer</title>
+    <title>Hockeytron AI Hockey Jersey Designer</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -125,7 +125,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>AI Hockey Jersey Designer</h1>
+            <h1>HockeyTron AI Hockey Jersey Designer</h1>
         </header>
         <div class="chat-window" id="chat-window">
             <div class="message ai-response">
@@ -190,36 +190,13 @@
             }
         });
 
-        saveBtn.addEventListener('click', async () => {
-            if (!lastImageUrl) {
+        saveBtn.addEventListener('click', () => {
+            if (!lastImageUrl || !lastPrompt) {
                 alert('No image to save!');
                 return;
             }
-            saveBtn.disabled = true;
-            saveBtn.textContent = 'Saving...';
-
-            try {
-                const formData = new FormData();
-                formData.append('imageUrl', lastImageUrl);
-                formData.append('prompt', lastPrompt);
-                const response = await fetch('save.php', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                const result = await response.json();
-                if (!response.ok) {
-                    throw new Error(result.error || 'An unknown error occurred while saving.');
-                }
-
-                alert('Success! The final design has been emailed.');
-
-            } catch (error) {
-                alert(`Error: ${error.message}`);
-            } finally {
-                saveBtn.disabled = false;
-                saveBtn.textContent = 'Save';
-            }
+            // Redirect to send.php with URL parameters
+            window.location.href = 'send.php?image=' + encodeURIComponent(lastImageUrl) + '&prompt=' + encodeURIComponent(lastPrompt);
         });
 
         function appendMessage(text, className) {
@@ -243,7 +220,7 @@
             messageDiv.appendChild(clarification);
 
             chatWindow.appendChild(messageDiv);
-            chatWindow.scrollTop = chatWindow.scrollTop;
+            chatWindow.scrollTop = chatWindow.scrollHeight;
         }
     </script>
 </body>

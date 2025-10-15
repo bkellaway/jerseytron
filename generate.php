@@ -36,7 +36,9 @@ try {
     debug_log("API key present: " . (empty(GEMINI_API_KEY) ? 'NO' : 'YES'));
 
     $prompt = $_POST['prompt'];
-    $full_prompt = "A high-resolution, photorealistic image of a custom sublimated hockey jersey, front view, on a mannequin. The design should be: " . $prompt;
+  //  $full_prompt = "A high-resolution, photorealistic image of a custom sublimated hockey jersey, front view, on a mannequin. The design should be: " . $prompt;
+
+	$full_prompt = "A high-resolution, photorealistic image of a custom sublimated hockey jersey, front view, on a mannequin in a T-pose with arms extended horizontally at shoulder height, perfectly straight with no elbow bend. The design should be: " . $prompt;
 
     debug_log("Full prompt: " . $full_prompt);
 
@@ -165,7 +167,22 @@ try {
         echo json_encode(['error' => 'Failed to save image']);
         exit;
     }
+/*
+	// NEW: Remove background
+	require_once 'remove_background.php';
+	$noBgFileName = 'jersey_nobg_' . uniqid() . '.png';
+	$noBgFilePath = 'generated_images/' . $noBgFileName;
 
+	if (removeBackground($filePath, $noBgFilePath)) {
+		debug_log("SUCCESS: Background removed, saved to " . $noBgFilePath);
+		// Return the no-background version
+		echo json_encode(['imageUrl' => $noBgFilePath, 'originalUrl' => $filePath]);
+	} else {
+		debug_log("Background removal failed or disabled, using original");
+		echo json_encode(['imageUrl' => $filePath]);
+	}
+
+*/
     debug_log("SUCCESS: Image saved to " . $filePath);
     echo json_encode(['imageUrl' => $filePath]);
 
@@ -179,5 +196,5 @@ try {
     echo json_encode(['error' => 'Fatal Error: ' . $e->getMessage()]);
 }
 
+
 debug_log("=== End generate.php debug ===");
-?>
