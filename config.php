@@ -2,7 +2,7 @@
 
 // ** Google Gemini API Configuration **
 // Get your key from Google AI Studio: https://aistudio.google.com/app/apikey
-define('GEMINI_API_KEY', 'AIzaSyC5YfRnmYtUfGWGZhEJ1K9eFOtIWY_kM0k');
+define('GEMINI_API_KEY', '');
 
 // The model name for "Nano Banana" / Gemini 2.5 Flash Image
 // Note: This model name might change. Check the Google AI docs for the latest identifier.
@@ -10,7 +10,7 @@ define('GEMINI_MODEL', 'gemini-2.5-flash-image-preview'); // Fixed: added -previ
 
 
 // Background Removal Configuration
-define('REMOVEBG_API_KEY', 'EjxFZz4oX1FTrd4ZkqoQ8oDZ');
+define('REMOVEBG_API_KEY', '');
 define('ENABLE_BG_REMOVAL', true);
 
 // ** Email Configuration **
@@ -32,5 +32,6 @@ define('SMTP_PASSWORD', 'jhza yfbt krcc qzwb');
 define('SMTP_PORT', 587);
 // SMTP encryption (tls or ssl)
 define('SMTP_SECURE', 'tls');
+
 
 ?>
