@@ -181,7 +181,7 @@ try {
 		debug_log("Background removal failed or disabled, using original");
 		echo json_encode(['imageUrl' => $filePath]);
 	}
-
+  
 */
     debug_log("SUCCESS: Image saved to " . $filePath);
     echo json_encode(['imageUrl' => $filePath]);
