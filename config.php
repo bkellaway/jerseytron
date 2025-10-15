@@ -15,9 +15,9 @@ define('ENABLE_BG_REMOVAL', true);
 
 // ** Email Configuration **
 // The email address to send the final designs to
-define('RECIPIENT_EMAIL', 'joe@hockeywest.com');
-define('RECIPIENT_NAME', 'HockeyTron Jersery Graphic Design Team');
-define('BCC_EMAILS', 'bill@billkellaway.com,chrism@hockeytron.com'); // Change this to your BCC address
+define('RECIPIENT_EMAIL', '');
+define('RECIPIENT_NAME', 'Jersery Graphic Design Team');
+define('BCC_EMAILS', ''); // Change this to your BCC address
 
 // ** PHPMailer SMTP Configuration (e.g., using Gmail) **
 // Set to true to enable SMTP
@@ -35,4 +35,5 @@ define('SMTP_SECURE', 'tls');
 
 
 ?>
+
 
