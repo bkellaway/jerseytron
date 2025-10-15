@@ -27,7 +27,7 @@ define('SMTP_HOST', 'smtp.gmail.com');
 // Your SMTP username
 define('SMTP_USERNAME', 'billkellaway@gmail.com');
 // Your SMTP password or App Password
-define('SMTP_PASSWORD', 'jhza yfbt krcc qzwb');
+define('SMTP_PASSWORD', '');
 // SMTP port (587 for TLS, 465 for SSL)
 define('SMTP_PORT', 587);
 // SMTP encryption (tls or ssl)
@@ -35,3 +35,4 @@ define('SMTP_SECURE', 'tls');
 
 
 ?>
+
