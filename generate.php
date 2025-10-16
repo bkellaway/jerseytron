@@ -6,7 +6,7 @@ ini_set('display_errors', 1); // Don't output errors to browser, we'll handle th
 
 // Include dependencies
 require 'config.php';
-require 'functions.php';
+
 // Log function to help debug
 function debug_log($message) {
     error_log(date('Y-m-d H:i:s') . ' - DEBUG: ' . $message . "\n", 3, 'debug.log');
@@ -36,7 +36,7 @@ try {
     debug_log("API key present: " . (empty(GEMINI_API_KEY) ? 'NO' : 'YES'));
 
     $prompt = $_POST['prompt'];
-    $full_prompt = "A high-resolution, photorealistic image of a custom sublimated hockey jersey, front view, on a mannequin. The design should be: " . $prompt;
+//    $full_prompt = "A high-resolution, photorealistic image of a custom sublimated hockey jersey, front view, on a mannequin. The design should be: " . $prompt;
 
 //	$full_prompt = "A high-resolution, photorealistic image of a custom sublimated hockey jersey, front view, on a mannequin in a T-pose with arms extended horizontally at shoulder height, perfectly straight with no elbow bend. The design should be: " . $prompt;
 
@@ -44,6 +44,35 @@ try {
 //$full_prompt = "A high-resolution, photorealistic image of a custom sublimated hockey jersey, FRONT VIEW, on a white or neutral background. The jersey is on a headless mannequin in a perfect T-POSE. The mannequin's arms must be extended perfectly horizontal at 90-degrees from the body, straight with ZERO elbow bend. The jersey is perfectly centered and flat, with no folds or wrinkles. The design should be: " . $prompt;
 
 //$full_prompt = "A high-resolution, photorealistic image of a custom sublimated hockey jersey, FRONT VIEW, on a TRANSPARENT BACKGROUND.  The jersey is on a headless mannequin in a perfect T-POSE. The mannequin's arms must be extended perfectly horizontal at 90-degrees from the body, straight with ZERO elbow bend. The jersey is perfectly centered and flat, with no folds or wrinkles. The design should be: " . $prompt;
+
+// Fetch the reference image from your server
+$reference_jersey_url = "https://jerseydesigner.hockeytron.com/reference_images/3d-Mesh-to-2D-for-AI-Texture.png";
+$reference_image_data = file_get_contents($reference_jersey_url);
+$reference_image_base64 = base64_encode($reference_image_data);
+
+// Build the multimodal prompt
+$text_prompt = "Using the first image as a strict shape and pose reference, generate a high-resolution, photorealistic image of a custom sublimated hockey jersey. The jersey should maintain the exact FRONT VIEW, pose, and dimensions shown in the reference image. Apply the following design to the jersey: " . $prompt;
+
+// Prepare the API request with both images
+$contents = [
+    [
+        'parts' => [
+            // Reference image first
+            [
+                'inline_data' => [
+                    'mime_type' => 'image/png',
+                    'data' => $reference_image_base64
+                ]
+            ],
+            // Text prompt
+            [
+                'text' => $text_prompt
+            ]
+        ]
+    ]
+];
+
+
 
     debug_log("Full prompt: " . $full_prompt);
 
